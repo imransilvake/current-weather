@@ -10,8 +10,8 @@ A simple and clean weather application built using React, Redux Toolkit and Mate
 - [X] Debounce on Input: To prevent UI code from needing to process every event and to drastically reduces the number of API calls sent to the server
 - [X] Use of Material-UI Framework
 - [X] Use of openweathermap API to fetch weather data
-- [X] Automatic refresh weather data after each minute
-- [X] Use of Redux Toolkit (RTK) for handling aync calls
+- [X] An automatic refresh weather data after each minute
+- [X] Use of Redux Toolkit (RTK) for handling app state and async calls
 - [ ] Organize the project
 
 
