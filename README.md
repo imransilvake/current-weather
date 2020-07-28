@@ -12,7 +12,6 @@ A simple and clean weather application built using React, Redux Toolkit and Mate
 - [X] Use of openweathermap API to fetch weather data
 - [X] An automatic refresh weather data after each minute
 - [X] Use of Redux Toolkit (RTK) for handling app state and async calls
-- [ ] Organize the project
 
 
 ## E2E Test
