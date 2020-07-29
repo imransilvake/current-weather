@@ -1,13 +1,13 @@
 // react
-import React from 'react';
+import React, { lazy } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // app
 import ENV from '../environment/index';
 
 // lazy load components
-const Weather = React.lazy(() => import('./screens/weather/Weather'));
-const Error404 = React.lazy(() => import('./screens/404/Error404'));
+const Weather = lazy(() => import('./screens/weather/Weather'));
+const Error404 = lazy(() => import('./screens/404/Error404'));
 
 const AppRouter = () => {
 	return (

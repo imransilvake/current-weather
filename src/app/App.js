@@ -1,5 +1,5 @@
 // react
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
 // app
@@ -23,7 +23,7 @@ const theme = createMuiTheme({
 const App = () => {
 	return (
 		<MuiThemeProvider theme={theme}>
-			<React.Suspense fallback={<LinearProgress />}>
+			<Suspense fallback={<LinearProgress />}>
 				<BrowserRouter>
 					{/* Header */}
 
@@ -31,7 +31,7 @@ const App = () => {
 
 					{/* Footer */}
 				</BrowserRouter>
-			</React.Suspense>
+			</Suspense>
 		</MuiThemeProvider>
 	);
 };

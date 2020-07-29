@@ -3,13 +3,14 @@ import React, { useEffect } from 'react';
 
 // redux
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchApi, dataSelector } from '../../../slices/proxy';
+import { fetchApi, dataSelector } from '../../../slices/proxy/proxy';
 
 // app
 import './Weather-Card.scss';
 import { AppOptions, AppServices } from '../../../../app.config';
 import { getCurrentDay, getCurrentTime } from '../../../utilities/helpers/Date';
-import { addLetterSpacing, getWeatherImage } from '../../../utilities/helpers/Helper';
+import addLetterSpacing from '../../../utilities/helpers/Helper';
+import WeatherImage from '../weather-image/Weather-Image';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 const WeatherCard = ({ city }) => {
@@ -50,23 +51,25 @@ const WeatherCard = ({ city }) => {
 
 		// weather data
 		if (data && data['weather']) {
-			return data['weather'].map((item) => (
-				<div className="wf-card" key={item.id}>
-					<div className="wf-block-1">
-						<h1>{ addLetterSpacing(data.name, 2) }</h1>
-						<div className="wf-sides">
-							<h6>{ addLetterSpacing(getCurrentDay(), 1) }</h6>
-							<h6>{ addLetterSpacing(getCurrentTime(data['dt'], data['timezone']), 1) }</h6>
+			return data['weather'].map((item, index) => (
+				index === 0 && (
+					<div className="wf-card" key={item.id}>
+						<div className="wf-block-1">
+							<h1>{ addLetterSpacing(data.name, 2) }</h1>
+							<div className="wf-sides">
+								<h6>{ addLetterSpacing(getCurrentDay(), 1) }</h6>
+								<h6>{ addLetterSpacing(getCurrentTime(data['dt'], data['timezone']), 1) }</h6>
+							</div>
+						</div>
+						<div className="wf-block-2">
+							<WeatherImage icon={item.icon} />
+						</div>
+						<div className="wf-block-3">
+							<h2>{ `${Math.round(data['main']['temp_min'])}°` }</h2>
+							<p>{ item.description }</p>
 						</div>
 					</div>
-					<div className="wf-block-2">
-						<img src={getWeatherImage(item.icon)} alt={item.icon} />
-					</div>
-					<div className="wf-block-3">
-						<h2>{ `${Math.round(data['main']['temp_min'])}°` }</h2>
-						<p>{ item.description }</p>
-					</div>
-				</div>
+				)
 			));
 		}
 
