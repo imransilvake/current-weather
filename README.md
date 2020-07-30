@@ -1,5 +1,5 @@
 # Weather Forecast
-A simple and clean weather application built using React, Redux Toolkit and Material-UI Framework. [openweathermap](https://openweathermap.org/api/) API is used to fetch the current weather data. For E2E testing, Cypress is used.
+A simple and clean weather application built using React, Redux Toolkit and Material-UI Framework. [openweathermap](https://openweathermap.org/current/) API is used to fetch the current weather data. For E2E testing, Cypress is used.
 
 <p align="center">
 	<img src="preview.png" width="100%">
