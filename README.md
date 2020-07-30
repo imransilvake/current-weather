@@ -16,7 +16,7 @@ A simple and clean weather application built using React, Redux Toolkit and Mate
 
 ## E2E Test
 <p align="left">
-	<img src="e2e-test.png" width="50%">
+	<img src="e2e-test.png" width="70%">
 </p>
 
 
