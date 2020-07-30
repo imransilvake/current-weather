@@ -5,12 +5,17 @@
 	},
 	"env": {
 		"browser": true,
-		"node": true
+		"node": true,
+		"cypress/globals": true
 	},
 	"extends": [
 		"eslint:recommended",
 		"plugin:react/recommended",
+		"plugin:cypress/recommended",
 		"airbnb"
+	],
+	"plugins": [
+		"cypress"
 	],
 	"rules": {
 		"indent": ["error", "tab", { "SwitchCase": 1 }],
