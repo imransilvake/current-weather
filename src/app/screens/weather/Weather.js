@@ -8,7 +8,7 @@ import WeatherCard from './weather-card/Weather-Card';
 
 const Todo = () => {
 	// hook: setCity
-	const [city, setCity] = useState('islamabad');
+	const [city, setCity] = useState('düsseldorf');
 
 	return (
 		<section className="wf-wrapper">

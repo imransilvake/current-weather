@@ -3,14 +3,14 @@ context('Weather', () => {
 		cy.visit('https://city-weather-forecast.netlify.app/');
 	});
 
-	it('[Input] by default "islamabad" should be present in input field', () => {
-		cy.get('.wf-input input').should('have.value', 'islamabad');
+	it('[Input] by default "düsseldorf" should be present in input field', () => {
+		cy.get('.wf-input input').should('have.value', 'düsseldorf');
 	});
 
-	it('[Input] change city name to "Düsseldorf"', () => {
+	it('[Input] change city name to "islamabad"', () => {
 		cy.get('.wf-input input').clear();
-		cy.get('.wf-input input').type('Düsseldorf');
-		cy.get('.wf-input input').should('have.value', 'Düsseldorf');
+		cy.get('.wf-input input').type('islamabad');
+		cy.get('.wf-input input').should('have.value', 'islamabad');
 	});
 
 	it('[Result] validate result text', () => {
