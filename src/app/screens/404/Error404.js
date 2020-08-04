@@ -2,16 +2,13 @@
 import React from 'react';
 
 // app
-import { useTranslation } from 'react-i18next';
+import './Error404.scss';
 
 const Error404 = () => {
-	// hook: translation
-	const { t } = useTranslation();
-
 	return (
-		<section className="sc-app">
-			<h2>React</h2>
-			<p>{t('404')}</p>
+		<section className="cd-vh-center wf-e404">
+			<h1>404</h1>
+			<p>Page not found</p>
 		</section>
 	);
 };
