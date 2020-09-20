@@ -6,7 +6,7 @@ import './Weather.scss';
 import WeatherForm from './weather-form/Weather-Form';
 import WeatherCard from './weather-card/Weather-Card';
 
-const Todo = () => {
+const Weather = () => {
 	// hook: setCity
 	const [city, setCity] = useState('düsseldorf');
 
@@ -20,4 +20,4 @@ const Todo = () => {
 		</section>
 	);
 };
-export default Todo;
+export default Weather;
