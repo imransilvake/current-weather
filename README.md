@@ -1,4 +1,4 @@
-# Weather Forecast
+# Current Weather
 A simple and clean weather application built using React, Redux Toolkit and Material-UI Framework. [openweathermap](https://openweathermap.org/current/) API is used to fetch the current weather data. For E2E testing, Cypress is used.
 
 <p align="center">
@@ -14,7 +14,7 @@ A simple and clean weather application built using React, Redux Toolkit and Mate
 - [X] Use of Redux Toolkit (RTK) for handling app state and async calls
 
 
-## E2E Test
+## E2E Test Cases
 <p align="left">
 	<img src="e2e-test.png" width="70%">
 </p>
