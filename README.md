@@ -14,7 +14,7 @@ A simple and clean current weather application built using React, Redux Toolkit 
 - [X] Use of Redux Toolkit (RTK) for handling app state and async calls
 
 
-## E2E Test Cases
+## E2E Tests
 <p align="left">
 	<img src="e2e-test.png" width="70%">
 </p>
