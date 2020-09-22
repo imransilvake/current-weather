@@ -22,7 +22,6 @@
 		"string-no-newline": true,
 		"string-quotes": "single",
 
-		"unit-blacklist": ["em"],
 		"unit-case": "lower",
 		"unit-no-unknown": true,
 
