@@ -1,6 +1,6 @@
 context('Weather', () => {
 	it('[App] Visits the app link', () => {
-		cy.visit('https://city-current-weather.netlify.app/');
+		cy.visit('http://localhost:3000/');
 	});
 
 	it('[Input] by default "düsseldorf" should be present in input field', () => {
